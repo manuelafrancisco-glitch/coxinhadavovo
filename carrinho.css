@@ -1,0 +1,71 @@
+:root{
+  --primary:#f6b93b;
+  --dark:#111;
+  --card-bg:#111; 
+  --white:#fff;
+}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f0f0f;color:var(--white);}
+
+/* cabeçalho simples */
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;background:#7a0e0e;color:#fff}
+.site-header .logo{display:flex;gap:12px;align-items:center}
+.site-header nav a{color:#fff;text-decoration:none;margin-left:14px}
+
+/* caixa grande do carrinho */
+.cart-box{max-width:1100px;margin:28px auto;padding:20px;background:#161616;border-radius:8px;color:#fff}
+
+/* grid de cartões do carrinho (itens adicionados) */
+.cart-items-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap:16px;
+  margin-top:16px;
+}
+/* cartão retangular: imagem em cima, conteúdo embaixo */
+.cart-card{
+  background:#1e1e1e;
+  border-radius:10px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  border:1px solid rgba(255,255,255,0.04);
+}
+
+/* área da imagem (retângulo 3:2) */
+.cart-card .thumb{
+  width:100%;
+  aspect-ratio: 3 / 2; /* retangular */
+  background:#222;
+  display:block;
+  overflow:hidden;
+}
+.cart-card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* corpo do cartão */
+.cart-card .body{
+  padding:12px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex:1;
+}
+.cart-card .title{font-weight:700;font-size:15px;color:#fff;margin:0}
+.cart-card .price{color:#f6b93b;font-weight:800}
+.qty-row{display:flex;gap:8px;align-items:center}
+.qty-row button{background:#222;border:1px solid rgba(255,255,255,0.06);color:#fff;padding:6px 10px;border-radius:6px;cursor:pointer}
+.remove-btn{background:transparent;border:none;color:#ff7b7b;cursor:pointer}
+
+/* rodapé do carrinho */
+.cart-footer{display:flex;justify-content:space-between;align-items:center;margin-top:18px;gap:12px}
+.checkout-btn{background:#f6b93b;color:#000;border-radius:8px;padding:10px 16px;border:none;cursor:pointer}
+
+/* mensagem de vazio */
+.cart-empty{padding:30px;text-align:center;color:#bbb;background:transparent;border-radius:8px}
+
+/* responsivo */
+@media (max-width:520px){
+  .cart-items-grid{grid-template-columns:repeat(2,1fr)}
+  .cart-footer{flex-direction:column;align-items:stretch}
+}

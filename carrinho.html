@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho — Coxinhas da vovó</title>
+  <link rel="stylesheet" href="carrinho.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo"><img src="img/amarelo.png" alt="Logo" width="100">
+      <h1>Coxinhas da vovó</h1>
+    </div>
+    <nav><a href="menu.html">Continuar comprando</a> <a href="#" class="cart-link">Carrinho <span id="cart-count">0</span></a></nav>
+  </header>
+  <main>
+    <section class="cart-box">
+      <h2>Carrinho — seus salgados</h2>
+      <p class="cart-sub">Clique em "Adicionar" para colocar dentro da caixa</p>
+
+      <!-- Grande caixa: o JS renderiza os cards aqui -->
+      <div id="cart-items" class="products-grid"></div>
+
+      <div class="cart-footer">
+        <div class="subtotal">Subtotal: <strong id="subtotal">R$ 0,00</strong></div>
+        <button class="button checkout-btn" onclick="checkout()">Fechar pedido</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="carrinhojava.js"></script>
+</body>
+
+</html>

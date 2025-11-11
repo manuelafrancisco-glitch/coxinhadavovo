@@ -1,0 +1,134 @@
+*{
+      font-family: "Luckiest Guy", cursive;
+      margin: 0px;
+}
+a{
+  text-decoration: none;
+}
+.cabecalho{
+     background-color: rgb(255, 179, 0);
+     height: 100px;
+     margin: auto;
+     text-align: center;
+     
+}
+.logo{
+    width: 100px;
+   margin-top: 8px;
+}
+.close{
+  width: 50px;
+ margin: 20px;
+}
+.coxinha{
+  border-radius: 20px;
+  margin-left: 50px;
+  width: 400px;
+}
+h1{
+  color: rgb(130, 9, 9) ;
+  font-size: 60px;
+  margin-left: 50px;
+   text-shadow: 5px 5px 5px  rgb(177, 175, 175); 
+}
+.cox{
+  display: flex;
+}
+h3{
+   margin-left: 50px;
+   font-size: 30px;
+   margin-top: 30px;
+}
+.peso{
+  margin-left: 50px;
+  background-color:rgb(255, 179, 0);
+  width: 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 5px  rgb(106, 105, 105); 
+}
+.especial{
+  color:  rgb(130, 9, 9) ;
+   margin-top: 30px;
+   margin-left: 5px;
+   font-size: 30px;
+}
+.esp{
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.produto{
+  display: flex;
+}
+.pro{
+  display: flex;
+}
+.ingredientes{
+  margin-left: 50px;
+  background-color:rgb(255, 179, 0) ;
+  margin-right: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px  rgb(106, 105, 105); 
+}
+h4{
+  color:rgb(130, 9, 9) ;
+}
+.ing{
+  margin: auto;
+  font-size: 25px;
+  color:rgb(130, 9, 9)  ;
+}
+.nutri{
+  margin-left: 50px;
+}
+
+    .container {
+      top: 20px;
+      right: 20px;
+    }
+
+    .compra {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .quantidade {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .quantidade button {
+      background-color: #eee;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .quantidade input {
+      width: 40px;
+      text-align: center;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .botao-carrinho {
+      background-color: #a90606;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .botao-carrinho:hover {
+      background-color: #490202;
+    }

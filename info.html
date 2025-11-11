@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="info.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>informações nutricionais</title>
+</head>
+
+<body>
+  <header>
+    <section class="cabecalho">
+      <img class="logo" src="img/Coxinhas da vovó (2) 1.png" alt="">
+
+    </section>
+  </header>
+  <main>
+
+    <section class="logoclose">
+      <section>
+        <a href="menu.html"><img class="close" src="img/close.png" alt=""></a>
+
+      </section>
+      <section class="cox">
+        <img class="coxinha" src="img/coxinha frango cqueijo.png" alt="">
+        <div>
+          <h1>Coxinha de frango com queijo</h1>
+
+          <h3> Peso:</h3>
+          <p class="peso">120g</p>
+
+
+
+          <div class="produto">
+            <h2 class="esp">
+              informações do <h2 class="especial"> Produto:</h2>
+            </h2>
+          </div>
+          <section class="ingredientes">
+            <h3 class="ing">ingredientes:</h3>
+            <p class="">Água, farinha de trigo enriquecida com ferro e ácido fólico, peito de frango (Agrobacterium tumefaciens, Bacillus thuringiensis, Streptomyces viridochromogenes e/ou Zea mays), óleo de algodão, margarina(Streptomyces viridochromogenes, Agrobacterium tumefaciens e/ou Bacillus thuringiensis), farinha de rosca, proteína texturizada de soja (Bacillus thuringiensis, Streptomyces viridochromogenes, Agrobacterium tumefasciens e/ou Zea mays), amido modificado, condimento preparado sabor galinha (Bacillus thuringiensis, Streptomyces viridochromogenes, Agrobacterium tumefaciens, Zea mays, Sphingobium herbicidorovans e/ou Diabrotica firgifera), cebola, óleo de soja (Streptomyces viridochromogenes, Agrobacterium tumefaciens e/ou Bacillus thuringiensis), alho, salsa, mistura ligante natural para empanamento (Bacillus thuringiensis, Streptomyces viridochromogenes, Agrobacterium tumefaciens e/ou Zea mays), sal, colorau, realçador de sabor glutamato monossódico (INS 621), conservadores benzoato de sódio (INS 211) e  sorbato de potássio (INS 202). 
+               </p>
+            <h4>ALÉRGICOS: CONTÉM TRIGO E SOJA. PODE CONTER OVO, CAMARÃO, LEITE, CENTEIO, CEVADA, AVEIA E TRITICALE. CONTÉM GLÚTEN. NÃO CONTÉM LACTOSE.</h4>
+          </section>
+      </section>
+      <section>
+        <div class="produto">
+          <h2 class="esp">Informação </h2>
+          <h2 class="especial">Nutricional:</h2>
+        </div>
+        <img class="nutri" src="img/nutricional 1.png" alt="">
+        <div class="container">
+          <div class="compra">
+            <div class="quantidade">
+              <button onclick="alterarQuantidade(-1)">−</button>
+              <input type="text" id="quantidade" value="1" readonly>
+              <button onclick="alterarQuantidade(1)">+</button>
+            </div>
+            <button class="botao-carrinho">Adicionar ao carrinho</button>
+          </div>
+        </div>
+
+        <script>
+          function alterarQuantidade(delta) {
+            const input = document.getElementById('quantidade');
+            let valor = parseInt(input.value);
+            if (isNaN(valor)) valor = 1;
+            valor += delta;
+            if (valor < 1) valor = 1;
+            input.value = valor;
+          }
+        </script>
+      </section>
+  </main>
+</body>
+
+</html>
